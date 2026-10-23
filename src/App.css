@@ -47,3 +47,8 @@
 .study-option { display: block; color: #9eaaa4; font-size: 12px; line-height: 1.45; }
 .study-option b { display: inline-grid; place-items: center; width: 20px; height: 20px; margin-right: 8px; border: 1px solid var(--line); border-radius: 3px; color: #74817b; font: 10px var(--mono); }
 @media (max-width: 800px) { .answer-area { display: block; }.study-options { margin-bottom: 18px; } }
+.quiz-settings { display: flex; align-items: end; gap: 10px; flex-wrap: wrap; padding: 14px; border: 1px solid var(--line); background: #151b19; }
+.quiz-settings label { display: grid; gap: 6px; color: #718079; font: 10px var(--mono); letter-spacing: .4px; text-transform: uppercase; }
+.quiz-settings select { min-width: 120px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 3px; color: var(--text); background: #19211e; font-size: 12px; }
+.quiz-settings .button { height: 36px; }
+@media (max-width: 800px) { .quiz-settings { align-items: stretch; }.quiz-settings label { flex: 1; }.quiz-settings select { width: 100%; }.quiz-settings .button { width: 100%; } }
