@@ -43,6 +43,8 @@
 .result-hero { border-inline: 0 !important; padding-inline: 0 !important; }
 .score-circle { border-color: var(--line); }
 @media (max-width: 800px) { .sidebar { width: 100%; padding-top: 16px; }.welcome { min-height: auto; }.stats-grid { margin: 30px 0; }.stat-card { min-height: 90px; }.quiz-card { padding-inline: 0; } }
+.mobile-week-picker { display: none; }
+@media (max-width: 800px) { .mobile-week-picker { display: flex; align-items: center; gap: 6px; margin-left: auto; margin-right: 10px; color: #718079; font: 10px var(--mono); }.mobile-week-picker select { max-width: 92px; padding: 5px 4px; border: 1px solid var(--line); border-radius: 3px; color: var(--text); background: #19211e; font-size: 11px; } }
 .study-options { display: grid; gap: 7px; }
 .study-option { display: block; color: #9eaaa4; font-size: 12px; line-height: 1.45; }
 .study-option b { display: inline-grid; place-items: center; width: 20px; height: 20px; margin-right: 8px; border: 1px solid var(--line); border-radius: 3px; color: #74817b; font: 10px var(--mono); }
