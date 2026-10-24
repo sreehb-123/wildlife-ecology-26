@@ -31,7 +31,10 @@ function App() {
 
   const startQuiz = (weekCount = quizWeekCount, questionCount = quizQuestionCount) => {
     const pool = questions.filter((question) => question.week <= weekCount)
-    setQuizQuestions([...pool].sort(() => Math.random() - 0.5).slice(0, Math.min(questionCount, pool.length)))
+    setQuizQuestions([...pool]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, Math.min(questionCount, pool.length))
+      .map((question) => ({ ...question, options: [...question.options].sort(() => Math.random() - 0.5) })))
     setQuizAnswers({})
     setQuizIndex(0)
     setSubmitted(false)
